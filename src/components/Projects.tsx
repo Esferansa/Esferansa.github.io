@@ -22,10 +22,10 @@ const projectData: PersonalProject[] = [
     title: "강화학습 기반의 장기(Janggi) AI 엔진 및 최적화 파이프라인 구축",
     techStack: ["Python", "Reinforcement Learning", "Dueling DQN", "CNN", "Minimax"],
     description: [
-      "체스보다 경우의 수가 복잡하고 다채로운 장기 보드게임 판을 탐색하는 CNN 기반 상태 인코더 및 Dueling DQN 아키텍처 모델 설계 [cite: 739, 750]",
+      "체스보다 경우의 수가 복잡하고 다채로운 장기 보드게임 판을 탐색하는 CNN 기반 상태 인코더 및 Dueling DQN 아키텍처 모델 설계",
       "강화학습의 고질적인 한계인 '무한 반복수 파동'을 해결하기 위해 state.tobytes() 기반의 상태 해시 추적 및 가상 이동 필터링 알고리즘 구현 ",
-      "초기 훈련 속도 및 탐색 효율성 극대화(Guided Exploration)를 위하여 Double DQN 기법과 30% 확률의 Minimax 알고리즘 기반 전문가 모방 탐색(Expert Demonstration)을 결합한 하이브리드 학습 루프 설계 [cite: 740, 747]",
-      "에피소드 초반(40수 이내) 무의미한 기물 이동에 대한 페널티(-0.1점) 및 진영 구축 보너스를 제공하는 정밀한 보상 체계(Reward Shaping) 설계 [cite: 746]",
+      "초기 훈련 속도 및 탐색 효율성 극대화(Guided Exploration)를 위하여 Double DQN 기법과 30% 확률의 Minimax 알고리즘 기반 전문가 모방 탐색(Expert Demonstration)을 결합한 하이브리드 학습 루프 설계",
+      "에피소드 초반(40수 이내) 무의미한 기물 이동에 대한 페널티(-0.1점) 및 진영 구축 보너스를 제공하는 정밀한 보상 체계(Reward Shaping) 설계",
       "시니어 시스템 엔지니어 역량을 활용하여 multiprocessing 및 Ray 프레임워크 기반의 분산 처리 환경(Vectorized Environments) 도입을 통해 대규모 경험 데이터를 버퍼에 고속 누적하는 학습 인프라 확장 진행 중 "
     ],
     githubLink: "#" // 실제 저장소 링크가 생성되면 여기에 입력하세요.
