@@ -4,7 +4,7 @@ function Header() {
     <header className="sidebar">
       <div>
         <h1 style={{ fontSize: '2.5rem', margin: '0 0 10px 0', letterSpacing: '-1px', color: '#111827' }}>
-          Taek Hyoung Lee
+          이택형
         </h1>
         <h2 style={{ fontSize: '1.2rem', fontWeight: 500, margin: '0 0 20px 0', color: '#4b5563' }}>
           12년차 시스템 소프트웨어 엔지니어
@@ -17,8 +17,9 @@ function Header() {
       {/* 세로 네비게이션 메뉴 */}
       <nav style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <a href="#about" className="nav-link">01. About</a>
-        <a href="#experience" className="nav-link">02. Experience</a>
-        <a href="#projects" className="nav-link">03. Projects</a>
+        <a href="#skills" className="nav-link">02. Tech Stack</a>  {/* 👈 추가된 부분 */}
+        <a href="#experience" className="nav-link">03. Experience</a>
+        <a href="#projects" className="nav-link">04. Projects</a>
       </nav>
     </header>
   );
