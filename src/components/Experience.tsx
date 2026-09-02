@@ -2,6 +2,7 @@
 interface Project {
   name: string;
   period: string;
+  techStack: string[];
   details: string[];
 }
 
@@ -22,6 +23,7 @@ const experienceData: ExperienceItem[] = [
       {
         name: "전사적 제조실행시스템(MES) 구축 및 고도화",
         period: "2020.10 ~ 2024.12",
+        techStack: ["ASP.NET", ".NET", "VB", "PHP", "Stored Procedure"],
         details: [
           "기존 VB 기반 CS 프로그램의 ASP.NET 웹 환경 전환 작업 참여",
           "대용량 Stored Procedure를 웹 환경에 맞게 수정하고 페이징 조회 방식 개선",
@@ -32,6 +34,7 @@ const experienceData: ExperienceItem[] = [
       {
         name: "하드웨어 연동 및 공정 자동화",
         period: "2024.04 ~ 2024.05",
+        techStack: ["바코드 스캐너", "라벨 프린터"],
         details: [
           "작업 지시서 바코드 스캔 및 품목 검증 시스템 개발",
           "작업 완료 시 라벨 프린터와 연동해 운송장을 출력하는 기능 구현"
@@ -47,6 +50,7 @@ const experienceData: ExperienceItem[] = [
       {
         name: "인쇄 자동견적 ERP 및 MES 구축",
         period: "2017.10 ~ 2020.04",
+        techStack: ["Windows Tablet", "더존 ERP", "은행망 연동", "카카오톡", "팩스"],
         details: [
           "현장 작업자를 위한 윈도우 태블릿 전용 입력 프로그램 신규 개발",
           "더존 ERP 시스템 및 은행망 연동을 통한 입금 내역 자동 대사(Reconciliation) 모듈 구축",
@@ -63,6 +67,7 @@ const experienceData: ExperienceItem[] = [
       {
         name: "웹사이트 구축 및 유지보수",
         period: "2016.10 ~ 2017.07",
+        techStack: ["웹사이트 개발", "유지보수"],
         details: [
           "농협 CS통계 페이지 및 다수의 기업/서비스 홈페이지 리뉴얼 및 신규 개발"
         ]
@@ -77,6 +82,7 @@ const experienceData: ExperienceItem[] = [
       {
         name: "엔터프라이즈 사내 인트라넷 및 솔루션 개발",
         period: "2011.10 ~ 2016.06",
+        techStack: ["인트라넷", "MS Office Add-in", "업무관리 시스템"],
         details: [
           "유한킴벌리, 서울대학교 등 다수의 기업/기관 브랜드 사이트 및 인트라넷 개발",
           "KT MS Office Add-in 제작 및 사내 업무관리 홈페이지 구축"
@@ -124,6 +130,21 @@ function Experience() {
                   <h4 style={{ margin: '0 0 16px 0', fontSize: '1.15rem', color: '#202124', fontWeight: '600' }}>
                     {project.name}
                   </h4>
+
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '0 0 16px 0' }}>
+                    {project.techStack.map((tech) => (
+                      <span key={tech} style={{
+                        padding: '4px 10px',
+                        backgroundColor: '#e8f0fe',
+                        color: '#1a73e8',
+                        borderRadius: '6px',
+                        fontSize: '0.82rem',
+                        fontWeight: '600'
+                      }}>
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                   
                   {/* 상세 내용 박스 (가독성을 위한 회색 박스 유지) */}
                   <div style={{ 

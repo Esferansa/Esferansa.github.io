@@ -6,13 +6,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f9fafb; /* 아주 연한 회색 배경으로 모던함 강조 */
+  background:
+    radial-gradient(circle at top right, rgba(26, 115, 232, 0.08), transparent 32rem),
+    #f7f9fc;
   color: #111827;
 }
 
 /* 전체 컨테이너를 넓게(1200px) 설정 */
 .app-container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   flex-direction: column; /* 모바일에서는 세로 배치 */
@@ -23,7 +25,7 @@ body {
 @media (min-width: 1024px) {
   .app-container {
     flex-direction: row; /* 가로 배치 */
-    gap: 60px;
+    gap: 64px;
     padding: 60px 24px;
   }
 
@@ -33,11 +35,14 @@ body {
     top: 60px;
     align-self: flex-start;
     height: calc(100vh - 120px);
+    padding-right: 42px;
+    border-right: 1px solid #e4e9f0;
   }
 
   .main-content {
     flex: 1; /* 남은 우측 공간을 모두 차지 */
     padding-bottom: 100px;
+    min-width: 0;
   }
 }
 
@@ -45,6 +50,7 @@ body {
 @media (max-width: 1023px) {
   .sidebar {
     padding: 40px 24px 20px;
+    border-bottom: 1px solid #e4e9f0;
   }
   .main-content {
     padding: 0 24px 100px;
@@ -54,10 +60,24 @@ body {
 /* 네비게이션 링크 호버 효과 */
 .nav-link {
   text-decoration: none;
-  color: #6b7280;
+  color: #667085;
   font-weight: 600;
-  transition: color 0.2s ease;
+  padding-left: 14px;
+  border-left: 2px solid #d8e1ee;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 .nav-link:hover {
   color: #1a73e8;
+  border-left-color: #1a73e8;
+  transform: translateX(3px);
+}
+
+.main-content > section {
+  scroll-margin-top: 28px;
+}
+
+@media (min-width: 1024px) {
+  .main-content > section:first-child {
+    padding-top: 4px !important;
+  }
 }

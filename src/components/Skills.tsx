@@ -1,7 +1,7 @@
 // src/components/Skills.tsx
 import React from 'react'; // JSX 에러 해결을 위해 추가
-import { SiDotnet, SiPhp, SiMysql, SiReact, SiJavascript, SiHtml5, SiPython, SiGithub } from "react-icons/si";
-import { FaJava, FaDatabase, FaRobot, FaNetworkWired, FaServer, FaCogs } from "react-icons/fa";
+import { SiDotnet, SiPhp, SiReact, SiJavascript, SiHtml5, SiPython, SiGithub } from "react-icons/si";
+import { FaDatabase, FaRobot, FaNetworkWired, FaServer, FaCogs } from "react-icons/fa";
 import { BsCpuFill } from "react-icons/bs";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -20,51 +20,38 @@ interface SkillCategory {
 // 2. 카테고리별 기술 스택 데이터 배열입니다.
 const skillData: SkillCategory[] = [
   {
-    category: "Backend & Frameworks",
+    category: "주력 실무",
     icon: <FaServer style={{ color: '#5f6368' }} />,
     skills: [
       { name: "C#", icon: <TbBrandCSharp color="#239120" size="1.2em" /> },
       { name: "ASP.NET MVC", icon: <SiDotnet color="#512bd4" /> },
       { name: "VB.NET", icon: <FaCogs color="#00539c" /> },
-      { name: "Java", icon: <FaJava color="#007396" /> },
       { name: "PHP", icon: <SiPhp color="#777bb4" /> },
+      { name: "Stored Procedure", icon: <FaDatabase color="#cc292b" /> },
     ]
   },
   {
-    category: "Database",
-    icon: <FaDatabase style={{ color: '#5f6368' }} />,
-    skills: [
-      // MS-SQL 아이콘 에러를 해결하기 위해 직관적인 붉은색 DB 아이콘으로 교체
-      { name: "MS-SQL", icon: <FaDatabase color="#cc292b" /> }, 
-      { name: "MySQL", icon: <SiMysql color="#4479a1" /> },
-      { name: "Query Optimization", icon: <FaDatabase color="#f29111" /> },
-    ]
-  },
-  {
-    category: "Frontend",
-    icon: <SiReact style={{ color: '#5f6368' }} />,
+    category: "기타 실무",
+    icon: <FaNetworkWired style={{ color: '#5f6368' }} />,
     skills: [
       { name: "React", icon: <SiReact color="#61dafb" /> },
       { name: "JavaScript", icon: <SiJavascript color="#f7df1e" /> },
       { name: "HTML / CSS", icon: <SiHtml5 color="#e34f26" /> },
+      { name: "REST API 연동", icon: <FaNetworkWired color="#8a2be2" /> },
+      { name: "Hardware 제어", icon: <BsCpuFill color="#607d8b" /> },
+      { name: "Git", icon: <SiGithub color="#181717" /> },
     ]
   },
   {
-    category: "AI & Data",
+    category: "개인학습",
     icon: <FaRobot style={{ color: '#5f6368' }} />,
     skills: [
       { name: "Python", icon: <SiPython color="#3776ab" /> },
       { name: "Gemini API", icon: <FaRobot color="#1a73e8" /> },
       { name: "Reinforcement Learning", icon: <BsCpuFill color="#0f9d58" /> },
-    ]
-  },
-  {
-    category: "System Integration",
-    icon: <FaNetworkWired style={{ color: '#5f6368' }} />,
-    skills: [
-      { name: "REST API 연동", icon: <FaNetworkWired color="#8a2be2" /> },
-      { name: "Hardware 제어", icon: <BsCpuFill color="#607d8b" /> },
-      { name: "Git", icon: <SiGithub color="#181717" /> },
+      { name: "Dueling DQN", icon: <BsCpuFill color="#0f9d58" /> },
+      { name: "CNN", icon: <BsCpuFill color="#0f9d58" /> },
+      { name: "Ray", icon: <BsCpuFill color="#0f9d58" /> },
     ]
   }
 ];

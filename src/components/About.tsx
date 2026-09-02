@@ -40,7 +40,7 @@ function About() {
         wordBreak: 'keep-all'
       }}>
         <p style={{ marginBottom: '20px' }}>
-          안녕하세요. MES, ERP, 인트라넷 등 <strong>기업 업무 시스템을 개발해 온 소프트웨어 엔지니어</strong>입니다.
+          안녕하세요. MES, ERP, 인트라넷 등 <strong>기업 업무 시스템을 개발해 온 12년+ 경력의 소프트웨어 엔지니어</strong>입니다.
           현장의 업무 흐름을 이해하고, 이를 시스템의 기능과 데이터 흐름으로 구현하는 일을 해왔습니다.
         </p>
         <p>
