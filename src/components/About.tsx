@@ -8,19 +8,19 @@ interface Strength {
 const strengths: Strength[] = [
   {
     title: "Legacy Modernization",
-    description: "VB, PHP 등 노후화된 레거시 시스템을 안정적인 .NET 환경으로 마이그레이션하고 현대화하는 데 풍부한 경험이 있습니다."
+    description: "VB, PHP 기반 시스템을 ASP.NET·.NET 환경으로 옮기고, 운영 환경에 맞게 기능을 개선한 경험이 있습니다."
   },
   {
     title: "System Integration",
-    description: "더존 ERP, 전자결제 API부터 바코드 스캐너, 라벨 프린터 등 하드웨어 연동까지 비즈니스 전반의 통합 솔루션을 구축합니다."
+    description: "더존 ERP·은행망 연동과 바코드 스캐너·라벨 프린터 연동처럼, 업무 시스템과 외부 장비·서비스를 연결해 왔습니다."
   },
   {
     title: "Performance Optimization",
-    description: "대용량 DB 프로시저 최적화와 쿼리 튜닝을 통해 시스템 병목을 해결하고 데이터 처리 성능을 극대화합니다."
+    description: "대용량 Stored Procedure와 조회 방식의 병목을 점검하고, 웹 환경에 맞는 페이징과 쿼리 개선을 수행했습니다."
   },
   {
-    title: "Continuous Growth",
-    description: "11년의 백엔드 경력에 안주하지 않고 React와 AI 기술을 학습하여 최신 기술 트렌드를 비즈니스에 접목하려 노력합니다."
+    title: "Learning & Exploration",
+    description: "업무 경험을 바탕으로 React와 Python 기반 개인 프로젝트를 진행하며, 새로운 도구를 실제 구현에 연결하는 방식을 탐색하고 있습니다."
   }
 ];
 
@@ -40,12 +40,11 @@ function About() {
         wordBreak: 'keep-all'
       }}>
         <p style={{ marginBottom: '20px' }}>
-          안녕하세요, <strong>12년 6개월 차 소프트웨어 엔지니어</strong>입니다. 
-          주로 엔터프라이즈 환경에서 MES, ERP, 인트라넷 등 기업의 핵심 비즈니스 로직을 설계하고 구현해 왔습니다.
+          안녕하세요. MES, ERP, 인트라넷 등 <strong>기업 업무 시스템을 개발해 온 소프트웨어 엔지니어</strong>입니다.
+          현장의 업무 흐름을 이해하고, 이를 시스템의 기능과 데이터 흐름으로 구현하는 일을 해왔습니다.
         </p>
         <p>
-          단순히 코드를 작성하는 것을 넘어, <strong>기술이 비즈니스의 문제를 어떻게 해결할 수 있는지</strong> 고민합니다. 
-          현장의 복잡한 요구사항을 분석하여 데이터 흐름을 최적화하고, 레거시 시스템을 안정적으로 현대화하여 기업의 운영 효율을 높이는 데 기여하고 있습니다.
+          새로운 기능 개발뿐 아니라 기존 시스템의 이전, 외부 서비스·장비 연동, 데이터 조회 방식 개선까지 담당해 왔습니다.
         </p>
       </div>
 

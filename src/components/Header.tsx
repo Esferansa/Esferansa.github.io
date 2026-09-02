@@ -7,10 +7,10 @@ function Header() {
           이택형
         </h1>
         <h2 style={{ fontSize: '1.2rem', fontWeight: 500, margin: '0 0 20px 0', color: '#4b5563' }}>
-          12년차 시스템 소프트웨어 엔지니어
+          엔터프라이즈 시스템 소프트웨어 엔지니어
         </h2>
         <p style={{ color: '#6b7280', lineHeight: 1.6, marginBottom: '50px' }}>
-          복잡한 비즈니스 문제를 해결하고, 레거시 시스템을 안정적으로 현대화하는 백엔드 전문가입니다.
+          MES·ERP·인트라넷 환경에서 업무 흐름을 구현하고, 기존 시스템을 개선해 온 개발자입니다.
         </p>
       </div>
       

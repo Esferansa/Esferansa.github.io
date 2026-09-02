@@ -7,18 +7,18 @@ interface PersonalProject {
   githubLink?: string; 
 }
 
-// 2. 장기 강화학습 프로젝트가 추가된 최신 데이터 배열입니다.
+// 개인 프로젝트에서 직접 다룬 기술과 구현 내용을 기록합니다.
 const projectData: PersonalProject[] = [
   {
     title: "강화학습 기반 장기(Janggi) AI 엔진 및 파이프라인 구축",
     period: "개인 프로젝트",
     techStack: ["Python", "Reinforcement Learning", "Dueling DQN", "CNN"],
     description: [
-      "체스보다 경우의 수가 복잡한 장기 보드게임 판을 탐색하는 CNN 기반 상태 인코더 및 Dueling DQN 아키텍처 모델 설계",
-      "강화학습의 고질적 한계인 '무한 반복수 파동' 해결을 위해 state.tobytes() 기반 상태 해시 추적 및 가상 이동 필터링 알고리즘 구현",
-      "Double DQN 기법과 30% 확률의 Minimax 기반 전문가 모방 탐색(Expert Demonstration)을 결합하여 초기 훈련 속도 및 탐색 효율성 극대화",
-      "에피소드 초반(40수 이내) 무의미한 기물 이동 페널티(-0.1점) 및 진영 구축 보너스를 제공하는 정밀한 보상 체계(Reward Shaping) 설계",
-      "multiprocessing 및 Ray 프레임워크 기반의 분산 처리 환경(Vectorized Environments)을 도입하여 대규모 경험 데이터를 고속 누적하는 학습 인프라 구축"
+      "장기 보드 상태를 입력으로 다루는 CNN 기반 상태 인코더와 Dueling DQN 구조를 설계",
+      "state.tobytes() 기반 상태 해시 추적과 가상 이동 필터링을 적용해 반복 이동을 다루는 로직 구현",
+      "Double DQN과 Minimax 기반 탐색을 조합해 학습·탐색 방식을 실험",
+      "초반 기물 이동과 진영 구축을 고려한 보상 규칙을 설계",
+      "multiprocessing과 Ray를 활용해 경험 데이터를 병렬로 수집하는 학습 환경 구성"
     ],
   },
   {
@@ -26,11 +26,10 @@ const projectData: PersonalProject[] = [
     period: "개인 프로젝트",
     techStack: ["React", "Gemini API", "JavaScript"],
     description: [
-      "사용자의 입력 맥락을 분석하고 복잡한 작업을 스마트하게 분할 및 추천해 주는 할 일 관리 시스템 설계",
-      "React를 활용하여 사용자 친화적인 프론트엔드 UI를 구축하고 효율적인 상태 관리 로직 구현",
-      "Gemini API를 연동하여 AI 응답 데이터를 가공 처리하고, 사용자 경험(UX) 최적화"
-    ],
-    githubLink: "#"
+      "사용자 입력을 바탕으로 할 일을 분할·추천하는 흐름을 설계",
+      "React로 할 일 관리 화면과 상태 관리 로직을 구현",
+      "Gemini API 응답을 화면에 맞게 가공하는 연동 로직을 구현"
+    ]
   }
 ];
 

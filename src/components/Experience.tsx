@@ -23,8 +23,8 @@ const experienceData: ExperienceItem[] = [
         name: "전사적 제조실행시스템(MES) 구축 및 고도화",
         period: "2020.10 ~ 2024.12",
         details: [
-          "기존 VB 기반의 CS 프로그램을 ASP.NET 웹 환경으로 100% 컨버전",
-          "웹 환경에 맞지 않는 대용량 Stored Procedure 전면 수정 및 페이징 성능 최적화",
+          "기존 VB 기반 CS 프로그램의 ASP.NET 웹 환경 전환 작업 참여",
+          "대용량 Stored Procedure를 웹 환경에 맞게 수정하고 페이징 조회 방식 개선",
           "기존 PHP 레거시 시스템을 .NET 환경으로 마이그레이션",
           "포인트, 예치금, 세금계산서/현금영수증 자동 연동 기능 추가 도입"
         ]
@@ -34,7 +34,7 @@ const experienceData: ExperienceItem[] = [
         period: "2024.04 ~ 2024.05",
         details: [
           "작업 지시서 바코드 스캔 및 품목 검증 시스템 개발",
-          "작업 완료 시 라벨 프린터와 실시간 연동하여 운송장 자동 출력 파이프라인 구축"
+          "작업 완료 시 라벨 프린터와 연동해 운송장을 출력하는 기능 구현"
         ]
       }
     ]

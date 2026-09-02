@@ -1,6 +1,6 @@
 // src/components/Skills.tsx
 import React from 'react'; // JSX 에러 해결을 위해 추가
-import { SiDotnet, SiPhp, SiMysql, SiReact, SiJavascript, SiHtml5, SiPython, SiVite, SiGithub } from "react-icons/si";
+import { SiDotnet, SiPhp, SiMysql, SiReact, SiJavascript, SiHtml5, SiPython, SiGithub } from "react-icons/si";
 import { FaJava, FaDatabase, FaRobot, FaNetworkWired, FaServer, FaCogs } from "react-icons/fa";
 import { BsCpuFill } from "react-icons/bs";
 import { TbBrandCSharp } from "react-icons/tb";
@@ -55,7 +55,6 @@ const skillData: SkillCategory[] = [
     skills: [
       { name: "Python", icon: <SiPython color="#3776ab" /> },
       { name: "Gemini API", icon: <FaRobot color="#1a73e8" /> },
-      { name: "Prompt Engineering", icon: <FaCogs color="#ff6d00" /> },
       { name: "Reinforcement Learning", icon: <BsCpuFill color="#0f9d58" /> },
     ]
   },
@@ -66,7 +65,6 @@ const skillData: SkillCategory[] = [
       { name: "REST API 연동", icon: <FaNetworkWired color="#8a2be2" /> },
       { name: "Hardware 제어", icon: <BsCpuFill color="#607d8b" /> },
       { name: "Git", icon: <SiGithub color="#181717" /> },
-      { name: "Vite", icon: <SiVite color="#646cff" /> },
     ]
   }
 ];
