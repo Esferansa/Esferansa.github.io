@@ -10,6 +10,19 @@ interface PersonalProject {
 // 개인 프로젝트에서 직접 다룬 기술과 구현 내용을 기록합니다.
 const projectData: PersonalProject[] = [
   {
+    title: "우마무스메 실시간 훈련 분석 도우미",
+    period: "개인 프로젝트",
+    techStack: ["Python", "PyQt6", "OpenCV", "EasyOCR", "PaddleOCR", "SQLite"],
+    description: [
+      "대상 게임 창을 선택해 화면을 캡처하고, 별도 QThread에서 분석을 수행하는 데스크톱 도구를 구현",
+      "스탯·훈련 상승치·실패율을 OCR로 읽고, EasyOCR과 PaddleOCR을 화면에서 전환할 수 있도록 구성",
+      "템플릿 매칭과 영역별 이미지 분석으로 훈련 종류, 서포트 카드, 힌트·이벤트 표시를 판별",
+      "목표 스탯, 상승치, 실패율, 서포트·힌트 정보를 점수화해 훈련 추천을 오버레이로 표시",
+      "턴별 분석 상태와 추천 결과를 SQLite에 저장하고, 가중치를 바꿔 추천 변화를 확인하는 백테스트 스크립트 구현",
+      "OCR 결과 캐시와 프레임 단위 재인식 조건을 두어 애니메이션 구간의 노이즈와 불필요한 분석 호출을 줄임"
+    ]
+  },
+  {
     title: "강화학습 기반 장기(Janggi) AI 엔진 및 파이프라인 구축",
     period: "개인 프로젝트",
     techStack: ["Python", "Reinforcement Learning", "Dueling DQN", "CNN"],
