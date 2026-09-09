@@ -33,6 +33,7 @@ const projectData: PersonalProject[] = [
       "초반 기물 이동과 진영 구축을 고려한 보상 규칙을 설계",
       "multiprocessing과 Ray를 활용해 경험 데이터를 병렬로 수집하는 학습 환경 구성"
     ],
+    githubLink: "https://github.com/Esferansa/janggi"
   },
   {
     title: "AI 연동 스마트 할 일(To-Do) 관리 애플리케이션",
