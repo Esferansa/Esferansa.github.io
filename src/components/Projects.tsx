@@ -36,6 +36,19 @@ const projectData: PersonalProject[] = [
     githubLink: "https://github.com/Esferansa/janggi"
   },
   {
+    title: "CartPole 강화학습 구현 및 학습 실험",
+    period: "개인학습 프로젝트",
+    techStack: ["Python", "PyTorch", "Gymnasium", "NumPy", "Matplotlib", "TensorBoard"],
+    description: [
+      "CartPole 환경에서 DQN, Dueling DQN, NoisyNet, C51을 단계적으로 구현하며 강화학습을 공부한 프로젝트로, ChatGPT의 도움을 받아 코드를 작성하고 개선",
+      "최종 C51 학습 코드에 Double DQN 방식의 목표 계산, 우선순위 경험 재생(PER), n-step 보상 누적을 적용",
+      "학습 전 무작위 정책과 학습 후 정책의 평균 보상을 평가하고, 보상 그래프·에이전트 실행 화면으로 학습 결과를 확인하는 흐름 구현",
+      "TensorBoard로 보상·손실을 기록하고 모델과 옵티마이저 상태를 체크포인트로 저장·불러오는 기능 구현",
+      "분포 투영의 확률 보존, n-step 종료 처리, 신경망 기울기와 학습 시 가중치 갱신을 확인하는 테스트 작성"
+    ],
+    githubLink: "https://github.com/Esferansa/cartpole"
+  },
+  {
     title: "AI 연동 스마트 할 일(To-Do) 관리 애플리케이션",
     period: "개인 프로젝트",
     techStack: ["React", "Gemini API", "JavaScript"],
