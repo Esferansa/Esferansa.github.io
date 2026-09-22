@@ -2,6 +2,7 @@
 interface PersonalProject {
   title: string;
   period: string;
+  projectType?: string;
   techStack: string[];
   description: string[];
   githubLink?: string; 
@@ -11,7 +12,8 @@ interface PersonalProject {
 const projectData: PersonalProject[] = [
   {
     title: "우마무스메 실시간 훈련 분석 도우미",
-    period: "개인 프로젝트",
+    period: "2026.05.08 - 2026.05.21",
+    projectType: "개인 개발",
     techStack: ["Python", "PyQt6", "OpenCV", "EasyOCR", "PaddleOCR", "SQLite"],
     description: [
       "대상 게임 창을 선택해 화면을 캡처하고, 별도 QThread에서 분석을 수행하는 데스크톱 도구를 구현",
@@ -109,6 +111,11 @@ function Projects() {
                 <span style={{ color: '#80868b', fontSize: '0.95rem', fontWeight: '500' }}>
                   {project.period}
                 </span>
+                {project.projectType && (
+                  <span style={{ color: '#80868b', fontSize: '0.85rem' }}>
+                    {project.projectType}
+                  </span>
+                )}
                 {project.githubLink && (
                   <a 
                     href={project.githubLink} 
