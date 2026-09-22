@@ -26,8 +26,8 @@ const projectData: PersonalProject[] = [
   },
   {
     title: "강화학습 기반 장기(Janggi) AI 엔진 및 파이프라인 구축",
-    period: "2026.02 - 2026.05 (추정)",
-    projectType: "개인 프로젝트",
+    period: "2026.02 - 2026.05",
+    projectType: "개인 학습용 프로젝트",
     techStack: ["Python", "Reinforcement Learning", "Dueling DQN", "CNN"],
     description: [
       "장기 보드 상태를 입력으로 다루는 CNN 기반 상태 인코더와 Dueling DQN 구조를 설계",
@@ -40,8 +40,8 @@ const projectData: PersonalProject[] = [
   },
   {
     title: "CartPole 강화학습 구현 및 학습 실험",
-    period: "2026.01 - 2026.02 (추정)",
-    projectType: "개인학습 프로젝트",
+    period: "2026.01 - 2026.02",
+    projectType: "개인 학습용 프로젝트",
     techStack: ["Python", "PyTorch", "Gymnasium", "NumPy", "Matplotlib", "TensorBoard"],
     description: [
       "CartPole 환경에서 DQN, Dueling DQN, NoisyNet, C51을 단계적으로 구현하며 강화학습을 공부한 프로젝트로, ChatGPT의 도움을 받아 코드를 작성하고 개선",
