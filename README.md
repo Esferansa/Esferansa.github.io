@@ -7,7 +7,7 @@ MES, ERP, 인트라넷 등 기업 업무 시스템 개발 경험과 개인 프�
 - About: 업무 경험을 바탕으로 한 핵심 역량
 - Tech Stack: 실제 업무 및 개인 프로젝트에서 다룬 기술
 - Work Experience: 회사·프로젝트별 담당 업무
-- Personal Projects: 강화학습 기반 장기 AI, AI 연동 To-Do 애플리케이션
+- Personal Projects: SCM 판매 분석(개발 진행 중), 우마무스메 헬퍼, 장기 AI, CartPole, AI 연동 To-Do 애플리케이션
 
 ## 실행
 

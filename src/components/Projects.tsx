@@ -3,6 +3,7 @@ interface PersonalProject {
   title: string;
   period: string;
   projectType?: string;
+  nextSteps?: string;
   techStack: string[];
   description: string[];
   githubLink?: string; 
@@ -10,6 +11,20 @@ interface PersonalProject {
 
 // 개인 프로젝트에서 직접 다룬 기술과 구현 내용을 기록합니다.
 const projectData: PersonalProject[] = [
+  {
+    title: "M5 판매 데이터 기반 SCM 분석 시스템",
+    period: "2026.09 - 진행 중",
+    projectType: "개인 학습용 프로젝트",
+    techStack: ["C#", "ASP.NET Core (.NET 10)", "SQLite", "JavaScript", "HTML / CSS"],
+    description: [
+      "M5 공개 판매 데이터를 활용해 SCM을 학습하며, 판매·달력·가격 CSV를 SQLite에 적재하는 기능 구현",
+      "원본과 DB의 행 수·판매량·가격 합계를 대조하고, SHA-256 원본 변경 감지와 외래 키·무결성 검사 수행",
+      "임시 DB에서 검증을 마친 뒤 최종 DB로 반영하고, 동일 원본의 재적재 시 기존 DB를 재사용하도록 구성",
+      "매장·상품별 판매 조회 API와 일간·주간·월간 그래프, 요약 통계, 일별 CSV 내보내기 화면 구현",
+      "가격 누락은 null로 보존하고, 소규모 CSV로 적재·조회·중복·결측 거부를 확인하는 통합 검증 코드 작성"
+    ],
+    nextSteps: "수요 예측, 재고 시뮬레이션, 강화학습 기반 발주, 시즌별 생산 계획, LLM 연동으로 단계적 확장 예정 (미구현)"
+  },
   {
     title: "우마무스메 실시간 훈련 분석 도우미",
     period: "2026.05.08 - 2026.05.21",
@@ -84,10 +99,10 @@ function Projects() {
           }}>
             
             {/* 프로젝트 타이틀, 기술 스택, 기간 (양쪽 분할 정렬 복구) */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px', borderBottom: '1px solid #f1f3f4', paddingBottom: '20px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px', borderBottom: '1px solid #f1f3f4', paddingBottom: '20px' }}>
               
               {/* 좌측: 타이틀 및 기술 스택 */}
-              <div style={{ flex: 1, paddingRight: '20px' }}>
+              <div style={{ flex: '1 1 280px', minWidth: 0 }}>
                 <h3 style={{ margin: '0 0 12px 0', fontSize: '1.5rem', color: '#111827', fontWeight: '700' }}>
                   {project.title}
                 </h3>
@@ -170,6 +185,14 @@ function Projects() {
                   </li>
                 ))}
               </ul>
+              {project.nextSteps && (
+                <div style={{ marginTop: '20px', paddingTop: '16px', borderTop: '1px solid #dadce0' }}>
+                  <h4 style={{ margin: '0 0 8px', color: '#5f6368', fontSize: '0.95rem' }}>향후 계획</h4>
+                  <p style={{ margin: 0, color: '#5f6368', lineHeight: 1.8, wordBreak: 'keep-all' }}>
+                    {project.nextSteps}
+                  </p>
+                </div>
+              )}
             </div>
 
           </div>
